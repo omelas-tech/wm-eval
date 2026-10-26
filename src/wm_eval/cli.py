@@ -85,13 +85,14 @@ def _cmd_run(args) -> int:
 
 
 def _cmd_report(args) -> int:
-    from .card import load_cards, render_markdown, summarize
+    from .card import load_cards, paired_comparisons, render_markdown, summarize
 
-    rows = summarize(load_cards(Path(args.results)))
+    cards = load_cards(Path(args.results))
+    rows, pairs = summarize(cards), paired_comparisons(cards)
     if args.json:
-        print(json.dumps(rows, indent=1))
+        print(json.dumps({"rows": rows, "paired": pairs}, indent=1))
         return 0
-    table = render_markdown(rows)
+    table = render_markdown(rows, pairs)
     if args.out:
         Path(args.out).write_text(table)
     print(table, end="")

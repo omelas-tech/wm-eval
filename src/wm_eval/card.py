@@ -118,7 +118,62 @@ def summarize(cards: list[dict]) -> list[dict]:
     return rows
 
 
-def render_markdown(rows: list[dict]) -> str:
+def paired_comparisons(cards: list[dict]) -> list[dict]:
+    """Same model, same episodes, different protocol: exact McNemar per pair.
+
+    Protocols that differ only in planner settings share an episode pack, so
+    their outcomes pair episode by episode and the comparison isolates the
+    planner setting from episode sampling noise.
+    """
+    groups: dict[tuple[str, str], list[dict]] = {}
+    for c in cards:
+        if c["policy"]["ref"] in ("random", "expert"):
+            continue
+        groups.setdefault((c["policy"]["ref"], c["pack"]["hash"]), []).append(c)
+
+    out = []
+    for (ref, pkhash), group in sorted(groups.items()):
+        group = sorted(group, key=lambda c: c["protocol"]["id"])
+        for i, a in enumerate(group):
+            for b in group[i + 1 :]:
+                test = mcnemar_exact(
+                    [e["success"] for e in a["episodes"]],
+                    [e["success"] for e in b["episodes"]],
+                )
+                out.append(
+                    {
+                        "model": ref,
+                        "pack_hash": pkhash[:12],
+                        "a": a["protocol"]["id"],
+                        "b": b["protocol"]["id"],
+                        "rate_a": a["result"]["success_rate"],
+                        "rate_b": b["result"]["success_rate"],
+                        **test,
+                    }
+                )
+    return out
+
+
+def render_markdown(rows: list[dict], pairs: list[dict] | None = None) -> str:
+    table = _render_rows(rows)
+    if not pairs:
+        return table
+    lines = [
+        "",
+        "Paired comparisons (same model, same episodes, different protocol; exact McNemar):",
+        "",
+        "| model | protocol A | protocol B | A | B | only A | only B | p |",
+        "|---|---|---|---:|---:|---:|---:|---:|",
+    ]
+    for p in pairs:
+        lines.append(
+            f"| `{p['model']}` | `{p['a']}` | `{p['b']}` | {100 * p['rate_a']:.0f}% "
+            f"| {100 * p['rate_b']:.0f}% | {p['only_a']} | {p['only_b']} | {p['p_value']:.2g} |"
+        )
+    return table + "\n".join(lines) + "\n"
+
+
+def _render_rows(rows: list[dict]) -> str:
     head = (
         "| protocol | model | n | success [95% CI] | random | expert oracle "
         "| normalized | p vs random |\n"

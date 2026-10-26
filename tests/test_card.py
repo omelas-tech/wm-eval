@@ -85,3 +85,24 @@ def test_tampered_pack_is_rejected(tmp_path, card):
     bad.write_text(json.dumps(pack))
     with pytest.raises(ValueError, match="edited"):
         load_pack(bad, card)
+
+
+def test_paired_comparison_on_shared_pack(tmp_path, card):
+    import copy
+
+    pack = _pack(card, 8)
+    other = copy.deepcopy(card)
+    other["id"] = "tworoom/repo-k25-hist3"
+    other["planner"]["history_len"] = 3
+    a = [True] * 6 + [False] * 2
+    b = [True] * 2 + [False] * 6
+    save_card(make_card(card, pack, Result("hf:me/model", [Ep(o) for o in a])), tmp_path)
+    save_card(make_card(other, pack, Result("hf:me/model", [Ep(o) for o in b])), tmp_path)
+
+    from wm_eval.card import paired_comparisons
+
+    (pair,) = paired_comparisons(load_cards(tmp_path))
+    assert (pair["a"], pair["b"]) == ("tworoom/repo-k25", "tworoom/repo-k25-hist3")
+    assert (pair["only_a"], pair["only_b"]) == (4, 0)
+    assert pair["p_value"] == pytest.approx(2 * 0.5**4)
+    assert "Paired comparisons" in render_markdown(summarize(load_cards(tmp_path)), [pair])
