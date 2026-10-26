@@ -1,0 +1,1036 @@
+{
+ "schema": "wm-eval/card@0",
+ "protocol": {
+  "id": "tworoom/repo-k25",
+  "hash": "f1dbc2edc8c932bc1e4967cfd01fbd4d100f2aa7bf24d9d4521857c365884453"
+ },
+ "pack": {
+  "hash": "d97be2b2c8480637a1e266a8641666e41a4549ac9b898111149d93d91e9bd99f",
+  "episodes": 200
+ },
+ "policy": {
+  "ref": "expert"
+ },
+ "result": {
+  "successes": 200,
+  "episodes": 200,
+  "success_rate": 1.0,
+  "ci95": [
+   0.9811546736227335,
+   1.0
+  ]
+ },
+ "runtime": {
+  "device": "cpu",
+  "seconds": 3.9,
+  "python": "3.12.0",
+  "platform": "macOS-27.0.1",
+  "wm-eval": "0.1.0",
+  "stable-worldmodel": "0.1.1",
+  "torch": "2.14.1",
+  "transformers": "4.57.6",
+  "gymnasium": "1.4.0"
+ },
+ "episodes": [
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 14.061
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 14.191
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 11.375
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 15.478
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 14.673
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 2.553
+  },
+  {
+   "success": true,
+   "steps_to_success": 2,
+   "final_distance": 15.852
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 14.281
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 8.256
+  },
+  {
+   "success": true,
+   "steps_to_success": 3,
+   "final_distance": 12.35
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 13.618
+  },
+  {
+   "success": true,
+   "steps_to_success": 11,
+   "final_distance": 11.042
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 11.251
+  },
+  {
+   "success": true,
+   "steps_to_success": 13,
+   "final_distance": 13.914
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 14.804
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 11.257
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 11.653
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 15.014
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 12.489
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 13.023
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 6.375
+  },
+  {
+   "success": true,
+   "steps_to_success": 3,
+   "final_distance": 11.017
+  },
+  {
+   "success": true,
+   "steps_to_success": 3,
+   "final_distance": 15.303
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 13.432
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 12.537
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 13.011
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 14.195
+  },
+  {
+   "success": true,
+   "steps_to_success": 11,
+   "final_distance": 11.611
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 12.31
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 13.49
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 3.74
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 2.112
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 11.773
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 11.165
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 12.911
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 14.056
+  },
+  {
+   "success": true,
+   "steps_to_success": 3,
+   "final_distance": 14.4
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 12.811
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 15.93
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 15.416
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 13.22
+  },
+  {
+   "success": true,
+   "steps_to_success": 13,
+   "final_distance": 13.685
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 13.068
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 12.476
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 12.869
+  },
+  {
+   "success": true,
+   "steps_to_success": 13,
+   "final_distance": 11.453
+  },
+  {
+   "success": true,
+   "steps_to_success": 10,
+   "final_distance": 13.389
+  },
+  {
+   "success": true,
+   "steps_to_success": 11,
+   "final_distance": 11.767
+  },
+  {
+   "success": true,
+   "steps_to_success": 10,
+   "final_distance": 11.879
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 13.351
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 14.798
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 14.484
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 14.322
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 14.211
+  },
+  {
+   "success": true,
+   "steps_to_success": 3,
+   "final_distance": 11.391
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 11.623
+  },
+  {
+   "success": true,
+   "steps_to_success": 10,
+   "final_distance": 14.235
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 13.678
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 13.482
+  },
+  {
+   "success": true,
+   "steps_to_success": 9,
+   "final_distance": 11.379
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 14.37
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 9.609
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 2.265
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 15.565
+  },
+  {
+   "success": true,
+   "steps_to_success": 10,
+   "final_distance": 14.29
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 14.869
+  },
+  {
+   "success": true,
+   "steps_to_success": 10,
+   "final_distance": 11.844
+  },
+  {
+   "success": true,
+   "steps_to_success": 14,
+   "final_distance": 15.388
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 12.364
+  },
+  {
+   "success": true,
+   "steps_to_success": 9,
+   "final_distance": 11.843
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 14.82
+  },
+  {
+   "success": true,
+   "steps_to_success": 2,
+   "final_distance": 14.474
+  },
+  {
+   "success": true,
+   "steps_to_success": 3,
+   "final_distance": 13.659
+  },
+  {
+   "success": true,
+   "steps_to_success": 2,
+   "final_distance": 13.124
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 12.763
+  },
+  {
+   "success": true,
+   "steps_to_success": 2,
+   "final_distance": 12.207
+  },
+  {
+   "success": true,
+   "steps_to_success": 2,
+   "final_distance": 13.052
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 13.923
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 14.372
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 12.566
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 15.411
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 15.794
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 11.951
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 15.334
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 15.56
+  },
+  {
+   "success": true,
+   "steps_to_success": 12,
+   "final_distance": 11.867
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 11.534
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 12.726
+  },
+  {
+   "success": true,
+   "steps_to_success": 3,
+   "final_distance": 12.13
+  },
+  {
+   "success": true,
+   "steps_to_success": 10,
+   "final_distance": 12.926
+  },
+  {
+   "success": true,
+   "steps_to_success": 10,
+   "final_distance": 12.304
+  },
+  {
+   "success": true,
+   "steps_to_success": 10,
+   "final_distance": 14.252
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 13.399
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 11.046
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 12.909
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 11.494
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 11.634
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 11.301
+  },
+  {
+   "success": true,
+   "steps_to_success": 15,
+   "final_distance": 15.384
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 13.712
+  },
+  {
+   "success": true,
+   "steps_to_success": 2,
+   "final_distance": 15.181
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 12.744
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 11.246
+  },
+  {
+   "success": true,
+   "steps_to_success": 9,
+   "final_distance": 11.772
+  },
+  {
+   "success": true,
+   "steps_to_success": 16,
+   "final_distance": 15.364
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 11.415
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 13.796
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 11.029
+  },
+  {
+   "success": true,
+   "steps_to_success": 3,
+   "final_distance": 13.478
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 13.98
+  },
+  {
+   "success": true,
+   "steps_to_success": 9,
+   "final_distance": 13.316
+  },
+  {
+   "success": true,
+   "steps_to_success": 9,
+   "final_distance": 12.988
+  },
+  {
+   "success": true,
+   "steps_to_success": 9,
+   "final_distance": 15.043
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 11.462
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 15.355
+  },
+  {
+   "success": true,
+   "steps_to_success": 3,
+   "final_distance": 11.03
+  },
+  {
+   "success": true,
+   "steps_to_success": 3,
+   "final_distance": 13.367
+  },
+  {
+   "success": true,
+   "steps_to_success": 10,
+   "final_distance": 12.923
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 15.587
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 12.911
+  },
+  {
+   "success": true,
+   "steps_to_success": 3,
+   "final_distance": 15.715
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 14.089
+  },
+  {
+   "success": true,
+   "steps_to_success": 10,
+   "final_distance": 12.936
+  },
+  {
+   "success": true,
+   "steps_to_success": 11,
+   "final_distance": 11.283
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 14.134
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 11.008
+  },
+  {
+   "success": true,
+   "steps_to_success": 10,
+   "final_distance": 14.657
+  },
+  {
+   "success": true,
+   "steps_to_success": 10,
+   "final_distance": 15.754
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 15.447
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 15.789
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 14.258
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 14.782
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 13.118
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 15.231
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 14.712
+  },
+  {
+   "success": true,
+   "steps_to_success": 11,
+   "final_distance": 11.89
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 12.138
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 14.063
+  },
+  {
+   "success": true,
+   "steps_to_success": 9,
+   "final_distance": 13.232
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 13.349
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 14.671
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 13.115
+  },
+  {
+   "success": true,
+   "steps_to_success": 3,
+   "final_distance": 11.847
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 13.779
+  },
+  {
+   "success": true,
+   "steps_to_success": 2,
+   "final_distance": 11.427
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 13.132
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 11.222
+  },
+  {
+   "success": true,
+   "steps_to_success": 3,
+   "final_distance": 12.683
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 0.845
+  },
+  {
+   "success": true,
+   "steps_to_success": 16,
+   "final_distance": 13.242
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 14.28
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 4.425
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 3.973
+  },
+  {
+   "success": true,
+   "steps_to_success": 10,
+   "final_distance": 13.813
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 11.607
+  },
+  {
+   "success": true,
+   "steps_to_success": 3,
+   "final_distance": 13.007
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 15.179
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 11.234
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 12.027
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 13.692
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 12.229
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 11.505
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 12.144
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 12.745
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 4.961
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 13.557
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 2.703
+  },
+  {
+   "success": true,
+   "steps_to_success": 12,
+   "final_distance": 13.366
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 14.219
+  },
+  {
+   "success": true,
+   "steps_to_success": 2,
+   "final_distance": 11.456
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 13.538
+  },
+  {
+   "success": true,
+   "steps_to_success": 11,
+   "final_distance": 13.241
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 15.498
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 13.467
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 15.647
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 13.667
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 13.622
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 13.885
+  },
+  {
+   "success": true,
+   "steps_to_success": 9,
+   "final_distance": 11.515
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 14.513
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 11.084
+  },
+  {
+   "success": true,
+   "steps_to_success": 9,
+   "final_distance": 11.96
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 12.194
+  },
+  {
+   "success": true,
+   "steps_to_success": 6,
+   "final_distance": 13.46
+  },
+  {
+   "success": true,
+   "steps_to_success": 10,
+   "final_distance": 15.661
+  },
+  {
+   "success": true,
+   "steps_to_success": 11,
+   "final_distance": 11.608
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 14.675
+  },
+  {
+   "success": true,
+   "steps_to_success": 7,
+   "final_distance": 14.648
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 15.516
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 6.019
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 15.91
+  },
+  {
+   "success": true,
+   "steps_to_success": 11,
+   "final_distance": 15.436
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 12.731
+  },
+  {
+   "success": true,
+   "steps_to_success": 5,
+   "final_distance": 15.935
+  },
+  {
+   "success": true,
+   "steps_to_success": 10,
+   "final_distance": 14.403
+  },
+  {
+   "success": true,
+   "steps_to_success": 15,
+   "final_distance": 14.039
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 12.806
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 14.234
+  },
+  {
+   "success": true,
+   "steps_to_success": 8,
+   "final_distance": 13.778
+  },
+  {
+   "success": true,
+   "steps_to_success": 9,
+   "final_distance": 14.996
+  }
+ ]
+}

@@ -1,0 +1,1037 @@
+{
+ "schema": "wm-eval/card@0",
+ "protocol": {
+  "id": "tworoom/native-b100",
+  "hash": "7404395fb13b197572676fa68ef81a37f8ae325b435e72ea5cba9a91064c9880"
+ },
+ "pack": {
+  "hash": "99716b6e16e4dc57b5a4a0afd972396d0dfc0188a48a739dd7a9cc7f8d84c946",
+  "episodes": 200
+ },
+ "policy": {
+  "ref": "hf:quentinll/lewm-tworooms",
+  "weights_sha256": "566f223624ea4bfb39dbfe6ae731198dd6ea73b7b8919fed6b1ecafca810f7dd"
+ },
+ "result": {
+  "successes": 68,
+  "episodes": 200,
+  "success_rate": 0.34,
+  "ci95": [
+   0.27791545970908793,
+   0.4081150447316374
+  ]
+ },
+ "runtime": {
+  "device": "mps",
+  "seconds": 2062.5,
+  "python": "3.12.0",
+  "platform": "macOS-27.0.1",
+  "wm-eval": "0.1.0",
+  "stable-worldmodel": "0.1.1",
+  "torch": "2.14.1",
+  "transformers": "4.57.6",
+  "gymnasium": "1.4.0"
+ },
+ "episodes": [
+  {
+   "success": true,
+   "steps_to_success": 44,
+   "final_distance": 15.021
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 196.454
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 181.806
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 136.368
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 76.748
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 105.083
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 129.036
+  },
+  {
+   "success": true,
+   "steps_to_success": 50,
+   "final_distance": 12.145
+  },
+  {
+   "success": true,
+   "steps_to_success": 47,
+   "final_distance": 15.132
+  },
+  {
+   "success": true,
+   "steps_to_success": 22,
+   "final_distance": 14.354
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 172.126
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 98.315
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 145.603
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 139.976
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 129.323
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 133.762
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 137.795
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 181.05
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 226.229
+  },
+  {
+   "success": true,
+   "steps_to_success": 19,
+   "final_distance": 12.007
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 90.588
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 134.537
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 171.051
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 142.479
+  },
+  {
+   "success": true,
+   "steps_to_success": 22,
+   "final_distance": 15.383
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 104.869
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 148.84
+  },
+  {
+   "success": true,
+   "steps_to_success": 15,
+   "final_distance": 11.444
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 177.063
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 178.996
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 102.32
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 181.298
+  },
+  {
+   "success": true,
+   "steps_to_success": 24,
+   "final_distance": 14.871
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 165.636
+  },
+  {
+   "success": true,
+   "steps_to_success": 23,
+   "final_distance": 12.039
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 102.148
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 105.421
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 159.544
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 137.112
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 141.227
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 169.009
+  },
+  {
+   "success": true,
+   "steps_to_success": 40,
+   "final_distance": 15.869
+  },
+  {
+   "success": true,
+   "steps_to_success": 17,
+   "final_distance": 14.471
+  },
+  {
+   "success": true,
+   "steps_to_success": 17,
+   "final_distance": 15.484
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 93.05
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 74.24
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 105.59
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 188.612
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 53.45
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 15.82
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 103.321
+  },
+  {
+   "success": true,
+   "steps_to_success": 13,
+   "final_distance": 14.179
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 122.081
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 134.547
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 133.37
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 102.0
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 137.035
+  },
+  {
+   "success": true,
+   "steps_to_success": 19,
+   "final_distance": 12.479
+  },
+  {
+   "success": true,
+   "steps_to_success": 23,
+   "final_distance": 14.349
+  },
+  {
+   "success": true,
+   "steps_to_success": 25,
+   "final_distance": 14.174
+  },
+  {
+   "success": true,
+   "steps_to_success": 10,
+   "final_distance": 15.727
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 118.869
+  },
+  {
+   "success": true,
+   "steps_to_success": 22,
+   "final_distance": 12.262
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 103.776
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 58.601
+  },
+  {
+   "success": true,
+   "steps_to_success": 21,
+   "final_distance": 14.196
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 111.358
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 83.421
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 139.986
+  },
+  {
+   "success": true,
+   "steps_to_success": 22,
+   "final_distance": 13.017
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 29.543
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 170.481
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 177.417
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 157.628
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 14.495
+  },
+  {
+   "success": true,
+   "steps_to_success": 24,
+   "final_distance": 14.849
+  },
+  {
+   "success": true,
+   "steps_to_success": 18,
+   "final_distance": 15.584
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 182.111
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 188.006
+  },
+  {
+   "success": true,
+   "steps_to_success": 17,
+   "final_distance": 12.8
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 125.762
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 153.779
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 118.613
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 163.38
+  },
+  {
+   "success": true,
+   "steps_to_success": 41,
+   "final_distance": 15.335
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 107.325
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 168.259
+  },
+  {
+   "success": true,
+   "steps_to_success": 21,
+   "final_distance": 15.411
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 114.898
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 138.363
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 53.89
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 143.54
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 124.194
+  },
+  {
+   "success": true,
+   "steps_to_success": 20,
+   "final_distance": 14.889
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 160.237
+  },
+  {
+   "success": true,
+   "steps_to_success": 20,
+   "final_distance": 15.876
+  },
+  {
+   "success": true,
+   "steps_to_success": 23,
+   "final_distance": 10.91
+  },
+  {
+   "success": true,
+   "steps_to_success": 38,
+   "final_distance": 15.506
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 156.85
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 138.938
+  },
+  {
+   "success": true,
+   "steps_to_success": 48,
+   "final_distance": 14.335
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 106.721
+  },
+  {
+   "success": true,
+   "steps_to_success": 78,
+   "final_distance": 15.055
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 162.251
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 112.314
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 117.866
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 69.84
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 139.895
+  },
+  {
+   "success": true,
+   "steps_to_success": 22,
+   "final_distance": 12.376
+  },
+  {
+   "success": true,
+   "steps_to_success": 47,
+   "final_distance": 11.515
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 154.124
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 125.903
+  },
+  {
+   "success": true,
+   "steps_to_success": 16,
+   "final_distance": 14.376
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 167.06
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 123.684
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 168.626
+  },
+  {
+   "success": true,
+   "steps_to_success": 40,
+   "final_distance": 12.584
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 197.141
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 160.168
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 95.451
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 114.707
+  },
+  {
+   "success": true,
+   "steps_to_success": 49,
+   "final_distance": 13.106
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 117.155
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 178.299
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 115.834
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 85.183
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 111.445
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 165.177
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 154.991
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 89.535
+  },
+  {
+   "success": true,
+   "steps_to_success": 24,
+   "final_distance": 13.359
+  },
+  {
+   "success": true,
+   "steps_to_success": 19,
+   "final_distance": 14.843
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 151.081
+  },
+  {
+   "success": true,
+   "steps_to_success": 23,
+   "final_distance": 13.105
+  },
+  {
+   "success": true,
+   "steps_to_success": 63,
+   "final_distance": 15.022
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 113.196
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 90.037
+  },
+  {
+   "success": true,
+   "steps_to_success": 25,
+   "final_distance": 11.739
+  },
+  {
+   "success": true,
+   "steps_to_success": 12,
+   "final_distance": 12.679
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 27.046
+  },
+  {
+   "success": true,
+   "steps_to_success": 41,
+   "final_distance": 14.658
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 116.546
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 116.086
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 114.625
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 123.636
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 227.155
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 207.128
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 100.648
+  },
+  {
+   "success": true,
+   "steps_to_success": 44,
+   "final_distance": 12.941
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 76.127
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 141.01
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 122.281
+  },
+  {
+   "success": true,
+   "steps_to_success": 62,
+   "final_distance": 14.142
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 25.187
+  },
+  {
+   "success": true,
+   "steps_to_success": 48,
+   "final_distance": 15.765
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 135.948
+  },
+  {
+   "success": true,
+   "steps_to_success": 23,
+   "final_distance": 13.228
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 126.998
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 177.653
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 83.373
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 162.138
+  },
+  {
+   "success": true,
+   "steps_to_success": 43,
+   "final_distance": 15.461
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 104.351
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 166.879
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 99.19
+  },
+  {
+   "success": true,
+   "steps_to_success": 24,
+   "final_distance": 14.981
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 150.586
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 188.639
+  },
+  {
+   "success": true,
+   "steps_to_success": 47,
+   "final_distance": 13.232
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 137.022
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 101.065
+  },
+  {
+   "success": true,
+   "steps_to_success": 24,
+   "final_distance": 15.711
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 12.825
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 97.632
+  },
+  {
+   "success": true,
+   "steps_to_success": 73,
+   "final_distance": 12.476
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 14.615
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 43.132
+  },
+  {
+   "success": true,
+   "steps_to_success": 22,
+   "final_distance": 15.08
+  },
+  {
+   "success": true,
+   "steps_to_success": 47,
+   "final_distance": 14.951
+  },
+  {
+   "success": true,
+   "steps_to_success": 23,
+   "final_distance": 15.95
+  },
+  {
+   "success": true,
+   "steps_to_success": 55,
+   "final_distance": 13.646
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 154.422
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 75.214
+  },
+  {
+   "success": true,
+   "steps_to_success": 4,
+   "final_distance": 14.345
+  },
+  {
+   "success": true,
+   "steps_to_success": 22,
+   "final_distance": 15.617
+  },
+  {
+   "success": true,
+   "steps_to_success": 75,
+   "final_distance": 13.762
+  },
+  {
+   "success": true,
+   "steps_to_success": 24,
+   "final_distance": 15.216
+  },
+  {
+   "success": true,
+   "steps_to_success": 18,
+   "final_distance": 15.21
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 80.835
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 78.309
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 112.14
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 136.389
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 147.512
+  },
+  {
+   "success": true,
+   "steps_to_success": 25,
+   "final_distance": 13.514
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 85.349
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 22.958
+  },
+  {
+   "success": true,
+   "steps_to_success": 1,
+   "final_distance": 7.197
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 157.122
+  },
+  {
+   "success": false,
+   "steps_to_success": null,
+   "final_distance": 137.015
+  },
+  {
+   "success": true,
+   "steps_to_success": 21,
+   "final_distance": 13.498
+  }
+ ]
+}
