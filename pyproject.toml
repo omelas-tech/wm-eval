@@ -1,0 +1,51 @@
+[project]
+name = "wm-eval"
+version = "0.1.0"
+description = "A neutral referee for latent world-model planning: pinned protocols, hashed episode packs, reproduction cards."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Omelas" }]
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+# Everything needed to actually roll out planners. Kept out of the core so the
+# protocol/statistics/report layer installs in seconds (CI, reviewers).
+run = [
+  "torch>=2.4",
+  "torchvision",
+  "transformers>=4.50,<5",  # v5 renamed ViT state-dict keys; released ckpts break
+  "gymnasium>=1.0",
+  "einops",
+  "hydra-core",
+  "stable-worldmodel @ git+https://github.com/galilai-group/stable-worldmodel@21446f1ede6d5284e981bd7b47f432b994e6d812",
+]
+
+[project.scripts]
+wmeval = "wm_eval.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/wm_eval"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,48 @@
+schema: wm-eval/protocol@0
+id: tworoom/repo-k25-hist3
+description: >
+  Same as repo-k25, but the planner feeds the predictor 3 context frames
+  (history_len=3), matching the predictor's trained num_frames=3. The
+  released eval config leaves history_len at its default of 1 (le-wm #100).
+notes: >
+  Start/goal pairs are regenerated from the environment with the data-collection
+  expert (scripts/data/collect_tworooms.py: action_noise=2.0,
+  action_repeat_prob=0.05, 100-step episodes) instead of read from the 3.4 GB
+  dataset. Action normalization is the StandardScaler fit on the released
+  dataset as published in sahnas/stigmergic-module-routing
+  (results/lewm_kaggle/.../tworoom/released_mean_seed42/solver_and_normalization.json);
+  scripts/check_norm.py re-derives it from expert rollouts as a cross-check.
+env:
+  id: swm/TwoRoom-v1
+  image_size: 224
+episodes:
+  count: 200
+  seed: 42
+  construction: expert_offset
+  goal_offset: 25
+  pool_trajectories: 400
+  expert:
+    action_noise: 2.0
+    action_repeat_prob: 0.05
+    max_steps: 100
+eval_budget: 50
+normalization:
+  action:
+    mean: [0.0030934159554243212, -0.05298253984909538]
+    std: [0.867547357428919, 0.8686383074906906]
+planner:
+  solver: cem
+  objective: goal_mse
+  num_samples: 300
+  n_steps: 30
+  topk: 30
+  var_scale: 1.0
+  horizon: 5
+  receding_horizon: 5
+  action_block: 5
+  history_len: 3
+  warm_start: true
+  batch_size: 1
+  seed: 42
+run:
+  batch_size: 50
