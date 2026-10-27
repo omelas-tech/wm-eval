@@ -46,8 +46,9 @@ same episodes. Full table with hashes and p-values:
 What the numbers say:
 
 1. **The replica reproduces the moderate published figures, not the high
-   ones.** 82% [77–87] agrees with Singh's 84% and is at the edge of the
-   paper's ~87%. 94% and 97.4% fall outside the interval: under this
+   ones.** 82% [77–87] agrees with Singh's 84% and the 86% reported in
+   [le-wm#101](https://github.com/lucas-maes/le-wm/issues/101), and is at the
+   edge of the paper's ~87%. 94% and 97.4% fall outside the interval: under this
    protocol a 50-episode run would score ≥47/50 about 1% of the time, so
    those figures most likely come from a different setup.
 2. **Goal construction alone moves the score by 48 points.** The same
@@ -60,6 +61,11 @@ What the numbers say:
    p = 1). That is expected once you look at the schedule: the planner
    replans every 25 env steps, so in a 50-step budget only the second plan
    ever sees the extra frames.
+4. **No sign the reported number depends on evaluating on training
+   trajectories.** Packs are fresh expert rollouts, not rows of the training
+   dataset (same distribution, new trajectories), and the score, 82%
+   [77–87], is consistent with the 86–87% reported on dataset rows
+   ([le-wm#90](https://github.com/lucas-maes/le-wm/issues/90) asks about this).
 
 ## Quick start
 
@@ -116,10 +122,11 @@ Released LeWM configs reference `stable_pretraining`'s ViT builder; wm-eval
 rebuilds the identical `transformers.ViTModel` (strict state-dict load) so the
 training stack is not needed.
 
-## Known pitfalls this caught
+## Known pitfalls
 
 - Released LeWM checkpoints do not load under `transformers>=5` (ViT
-  state-dict keys were renamed); wm-eval pins `<5`.
+  state-dict keys were renamed); wm-eval pins `<5`, the same fix reported in
+  [le-wm#80](https://github.com/lucas-maes/le-wm/issues/80).
 
 ## License
 
